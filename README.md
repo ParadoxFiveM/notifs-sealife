@@ -10,7 +10,7 @@ En premier temps, il vous faudra installer le script qui se nomme ``bulletin``. 
 
 Une fois mis dans le dossier ``resources`` de votre serveur, il vous faudra le start dans le ``server.cfg`` ou le ``ressources.cfg`` cela dépend de votre base.
 
-Une fois ceci fait aller chercher votre ``es_extended``. Une fois trouver, allez dans ``client/functions.lua``.
+Une fois ceci fait, allez chercher votre ``es_extended``. Une fois trouvé, allez dans ``client/functions.lua``.
 
 Remplacez tout cela:
 
