@@ -14,7 +14,8 @@ Une fois ceci fait aller chercher votre ``es_extended``. Une fois trouver, allez
 
 Remplacez tout cela:
 
-```function ESX.ShowNotification(msg, hudColorIndex)
+```
+function ESX.ShowNotification(msg, hudColorIndex)
 	AddTextEntry('esxNotification', msg)
 	BeginTextCommandThefeedPost('esxNotification')
 	if hudColorIndex then ThefeedNextPostBackgroundColor(hudColorIndex) end
@@ -33,11 +34,13 @@ function ESX.ShowHelpNotification(msg)
 	AddTextEntry('esxHelpNotification', msg)
 	BeginTextCommandDisplayHelp('esxHelpNotification')
 	EndTextCommandDisplayHelp(0, false, true, -1)
-end```
+end
+```
 
 par cela:
 
-``function ESX.ShowNotification(msg, flash, saveToBrief, hudColorIndex, title, subject, icon)
+```
+function ESX.ShowNotification(msg, flash, saveToBrief, hudColorIndex, title, subject, icon)
 	if title == nil then title = "NeverLife" end
 	if subject == nil then subject = "ANNONCEMENT" end
 	if icon == nil then icon = "message" end
@@ -57,7 +60,8 @@ function ESX.ShowHelpNotification(msg)
 	AddTextEntry('esxHelpNotification', msg)
 	BeginTextCommandDisplayHelp('esxHelpNotification')
 	EndTextCommandDisplayHelp(0, false, true, -1)
-end``
+end
+```
 
 Pour changer l'icône de la notification, allez dans ``bulletin/ui/icons`` et vous allez trouver ``message.png``. Remplacez-le par le logo de votre serveur.
 
