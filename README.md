@@ -14,7 +14,7 @@ Une fois ceci fait aller chercher votre ``es_extended``. Une fois trouver, allez
 
 Remplacez tout cela:
 
-``function ESX.ShowNotification(msg, hudColorIndex)
+```function ESX.ShowNotification(msg, hudColorIndex)
 	AddTextEntry('esxNotification', msg)
 	BeginTextCommandThefeedPost('esxNotification')
 	if hudColorIndex then ThefeedNextPostBackgroundColor(hudColorIndex) end
@@ -33,7 +33,7 @@ function ESX.ShowHelpNotification(msg)
 	AddTextEntry('esxHelpNotification', msg)
 	BeginTextCommandDisplayHelp('esxHelpNotification')
 	EndTextCommandDisplayHelp(0, false, true, -1)
-end``
+end```
 
 par cela:
 
